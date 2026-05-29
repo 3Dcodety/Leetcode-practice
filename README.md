@@ -1,5 +1,5 @@
 # Leetcode-practice
-### 🌲 Tree 题目分类
+## 1.🌲 Tree 题目分类
 
 <details>
 <summary><b>点击展开 / 收起 Tree 题目列表</b></summary>
