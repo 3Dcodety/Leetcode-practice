@@ -27,3 +27,20 @@
    - *注：带步数/资源限制的最短路径变形题。可使用控制循环次数的 Bellman-Ford，亦可通过引入 `min_cost` + `min_stops` 的双纪录黄金剪枝，或升级为 `dist[dot][used]` 二维状态分层图的堆优化 Dijkstra 解决。*
 
 </details>
+## 3.🔗 Linked List (链表) 题目分类
+
+<details>
+<summary><b>点击展开 / 收起 Linked List 题目列表</b></summary>
+
+这里是有关链表（Linked List）的基础与经典操作题目链接：
+
+1. [21. 合并两个有序链表 (Merge Two Sorted Lists)](https://leetcode.cn/problems/merge-two-sorted-lists/) —— 🟢 Easy
+   - *注：利用虚拟头节点（Dummy Node）简化边界，配合归并双指针同步遍历。*
+2. [83. 删除排序链表中的重复元素 (Remove Duplicates from Sorted List)](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) —— 🟢 Easy
+   - *注：单指针去重。由于链表已排序，相同元素必然相邻，遍历时若满足后继节点值相等则直接执行跳过操作。*
+3. [206. 反转链表 (Reverse Linked List)](https://leetcode.cn/problems/reverse-linked-list/) —— 🟢 Easy
+   - *注：链表基本功。双指针迭代修改 `next` 指向，注意临时变量暂存后继节点以防断链。*
+4. [876. 链表的中间结点 (Middle of the Linked List)](https://leetcode.cn/problems/middle-of-the-linked-list/) —— 🟢 Easy
+   - *注：快慢指针（龟兔赛跑）典型应用。快指针步长为 2，慢指针步长为 1，快指针触底时慢指针自然落在线性表的中点。*
+
+</details>
