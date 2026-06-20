@@ -1,0 +1,25 @@
+class Solution {
+public:
+    vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
+        int n1=nums1.size();
+        int n2=nums2.size();
+        vector<vector<int>>res;
+        using headnode=tuple<int,int,int>;
+        priority_queue<headnode,vector<headnode>,greater<headnode>>q;
+        for(int i=0;i<min(n1,k);i++)
+        {
+            q.emplace(nums1[i]+nums2[0],i,0);
+        }
+        while(k-->0&&!q.empty())
+        {
+            auto [sum,i,j]=q.top();
+            q.pop();
+            res.push_back({nums1[i],nums2[j]});
+            if(j+1<n2)
+            {
+                q.emplace(nums1[i]+nums2[j+1],i,j+1);
+            }
+        }
+        return res;
+    }
+};
