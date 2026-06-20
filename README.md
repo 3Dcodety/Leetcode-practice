@@ -28,8 +28,19 @@
 
 </details>
 
+## 3.🥞 Queue (队列) & Heap (堆) 题目分类
 
-## 3.🔗 Linked List (链表) 题目分类
+<details>
+<summary><b>点击展开 / 收起 Queue & Heap 题目列表</b></summary>
+
+这里是有关队列（Queue）与优先队列/二叉堆（Priority Queue / Heap）的题目链接：
+
+1. [373. 查找和最小的 K 对数字 (Find K Pairs with Smallest Sums)](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) —— 🟡 Medium
+   - *注：多路归并/Dijkstra 思想的经典应用。利用小根堆（优先队列）动态维护当前最小和，配合 C++17 结构化绑定 `auto [sum, i, j]` 优雅解包。初始化时将 `nums1` 前 $K$ 个元素与 `nums2[0]` 组合入堆，后续仅允许 `j + 1` 单向右移扩展，从而在不借助二维 `vis` 矩阵的前提下实现 $O(\min(N, K))$ 空间复杂度的极致剪枝，彻底告别内存超限 (MLE)。*
+
+</details>
+
+## 4.🔗 Linked List (链表) 题目分类
 
 <details>
 <summary><b>点击展开 / 收起 Linked List 题目列表</b></summary>
